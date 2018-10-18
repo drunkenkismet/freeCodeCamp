@@ -10,7 +10,7 @@ But we could simulate the functionalities of a class by taking advantage of the 
 
 This article assumes that you have a basic understanding of <a href="/src/pages/javascript/prototypes/index.md">prototypes</a>.
 
-For the sake of clarity let us assume that we want to create a class which can do the following
+For the sake of clarity, let us assume we want to create a class which can do the following:
 
 ```javascript
 var p = new Person('James','Bond'); // create a new instance of Person class
@@ -52,13 +52,13 @@ class Person {
 <br />
 <br />
 
-`class` is just a syntactic sugar over JavaScript's existing prototype-based inheritance model.
+`class` is just syntactic sugar over JavaScript's existing prototype-based inheritance model.
 
-In general programmers use the following ways to create a class in JavaScript.
+In general, programmers use the following ways to create a class in JavaScript.
 
 ### Using methods added to prototypes:
 
-Here, all the methods are added to prototype
+Here, all the methods are added to prototype.
 
 ```javascript
 function Person(firstName, lastName) {
@@ -104,7 +104,7 @@ Person.prototype = {
 
 ### Using methods added internally
 
-Here the methods are added internally instead of prototype
+Here, the methods are added internally instead of on the prototype
 
 ```javascript
 function Person(firstName, lastName) {
@@ -130,7 +130,7 @@ function Person(firstName, lastName) {
 ### Hiding details in classes with symbols
 
 
-Most often some properties and methods have to be hidden to prevent access from outside the function. With classes, to obtain this functionality, one way to do this is by using symbols. Symbol is a new built-in type of JavaScript, which can be invoked to give a new symbol value. Every Symbol is unique and can be used as a key on object. So one use case of symbols is that you can add something to an object you might not own, and you might not want to collide with any other keys of object so creating a new one and adding as property to that object using symbol is the safest. Also, when symbol value is added to an object; no one else will know how to get it.
+Most often, some properties and methods have to be hidden to prevent access from outside the function. With classes, to obtain this functionality, one way to do this is by using symbols. Symbol is a new built-in type of JavaScript, which can be invoked to give a new symbol value. Every Symbol is unique and can be used as a key on object. So one use case of symbols is that you can add something to an object you might not own, and you might not want to collide with any other keys of object so creating a new one and adding as property to that object using symbol is the safest. Also, when symbol value is added to an object; no one else will know how to get it.
 
 ```javascript
 class Person {
