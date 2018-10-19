@@ -3,7 +3,7 @@ title: this reference
 ---
 ## `this` reference
 
-In JavaScript, every function has a `this` reference automatically created when you declare it. This reference is quite similar to `this` reference in other class-based languages such as Java or C# (JavaScript is a prototype-based language and no "class" concept): *It points to the which object is calling to the function* (this object sometimes called as *context*). In JavaScript, however, *the `this` reference inside functions can be bound to different objects depending on where the function is being called*. Here are 5 basic rules for `this` binding in JavaScript:
+In JavaScript, every function has a `this` reference automatically created when you declare it. This reference is quite similar to `this` reference in other class-based languages such as Java or C#, despite JavaScript being a prototype-based language with no "class" concept: *It points to the object which calls the function* (this object is sometimes referred to as *context*). In JavaScript, however, *the `this` reference inside functions can be bound to different objects depending on where the function is being called*. Here are five basic rules for `this` binding in JavaScript:
 
 ### Rule 1
 
@@ -22,7 +22,7 @@ Note: If you declare the `foo()` function above in strict mode, then you call th
 
 ### Rule 2
 
-Let's examine example below:
+Let's look at an example:
 
 ```javascript
 function foo() {
