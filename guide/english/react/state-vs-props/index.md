@@ -7,9 +7,9 @@ When we start working with React components, we frequently hear two terms. They 
 
 ## State:
 
-* State is something that a component owns. It belongs to that particular component where it is defined.
-For example, A person's age is a state of that person.
-* State is mutable. But it can be changed by only by that component that owns it. As I only can change my age, not anyone else.
+* State is something that a component owns. It belongs to the particular component upon which it is defined.
+For example, a person's age is a state of that person.
+* State is mutable. But it can be changed only by the component that owns it. Just as I can only change my age, not anyone else.
 * You can change a state by using `this.setState()`
 
 See the below example to get an idea of state:
@@ -45,7 +45,7 @@ See the below example to get an idea of state:
 
   export default Person;
 ```
-In the above example,  `age` is the state of `Person` component. 
+In the above example, `age` is the state of the `Person` component. 
 
 ## Props:
 
@@ -74,11 +74,9 @@ See the below example to get an idea of Props:
   const person = <Person character = "good"></Person>
 ```
 
-In the above example, `const person = <Person character = "good"></Person>` we are passing `character = "good"` prop to `Person` component.
+In the above example, `const person = <Person character = "good"></Person>`, we are passing the `character = "good"` prop to the `Person` component. This results in an output of "I am a good person" (and, in fact, I am).
 
-It gives output as "I am a good person", in fact I am.
-
-There is lot more to learn on State and Props. Many things can be learnt by actually diving into coding. So get your hands dirty by coding.
+There is lot more to learn on state and props. Many things can be learnt by actually diving into coding. So get your hands dirty by coding!
 
 Reach me out on [twitter](https://twitter.com/getifyJr) if needed.
 
