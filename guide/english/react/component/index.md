@@ -23,7 +23,7 @@ The value ```name="Faisal Arkan"``` will be assigned to ```{props.name}``` from 
 
 ### Other ways to declare components
 
-There are many ways to declare components when using React.js, but there are two kinds of components, ***stateless*** components and ***stateful*** components.
+There are many ways to declare components when using React.js, but there are two kinds of components: ***stateless*** components and ***stateful*** components.
 
 ### Stateful
 
